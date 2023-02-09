@@ -7,11 +7,14 @@ spec: # Dictionary
   selector:
     matchLabels:
       app: nginx
+      run: nginx
   template:  
     metadata: # Dictionary
       name: nginx
       labels: # Dictionary
-        app: nginx  # Key value paids
+        app: nginx
+        run: nginx
+        # Key value paids
     spec:
       containers: # List
         - name: nginx
