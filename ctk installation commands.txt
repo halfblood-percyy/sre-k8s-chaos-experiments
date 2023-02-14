@@ -1,4 +1,5 @@
 Install Chaostoolkit
+------------------------------------------------------------------
 
 sudo apt-get install python3 python3-venv
 
@@ -9,6 +10,16 @@ source  ~/.venvs/chaostk/bin/activate
 pip install -U chaostoolkit
 
 chaos --version
+--------------------------------------------------------------------
+
+Get sample code from GITHUB
+--------------------------------------------------
+git clone https://github.com/chaostoolkit/chaostoolkit-documentation-code
+
+cd chaostoolkit-documentation-code/tutorials/a-simple-walkthrough
+-------------------------------------------------------------------------------------
+run first chaos experiment
+--------------------------------------------------------------------------------------
 
 show        "server.ssl_certificate": os.path.join(cur_dir, "cert.pem") from astre.py 
 since the valid cert name is cert.pem we should have that but what we have in the folder is validcert.pem
@@ -42,8 +53,13 @@ to run the above command be sure that journal.json is there in the folder
 
 
 check for reporting.pdf in the same folder
-
+-------------------------------------------------------------------------------------------
+Try with AKS
+---------------------------------------------------------------------------------------------
 
 az aks get-credentials --resource-group amit-rg --name sre-aks
+
+kubectl run -f naginx-dep.yaml
+------------------------------------------------------------------------------------------------
 
 
